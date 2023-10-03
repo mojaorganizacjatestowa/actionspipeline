@@ -3,6 +3,7 @@ on:
   workflow_run:
     workflows: [CI]
     types: [completed]
+  workflow_call:
 
 jobs:
   # This workflow contains a single job called "build"
