@@ -1,0 +1,5 @@
+name: Downstream
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
