@@ -49,7 +49,8 @@ jobs:
           sleep 3
   test:
    name: SecondJob
-   runs-on: ubuntu-latest              
+   runs-on: ubuntu-latest
+   environment: prod
    steps: 
    # Runs a single command using the runners shell
       - name: Run a one-line script
