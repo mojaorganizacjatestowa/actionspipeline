@@ -37,25 +37,31 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          echo Hello, world!
+          sleep 10
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sleep 3
   test:
    name: SecondJob
    runs-on: ubuntu-latest              
    steps: 
    # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: |
+          echo Hello, world!
+          sleep 8
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sleep 5
           sh fdd.sh
   
