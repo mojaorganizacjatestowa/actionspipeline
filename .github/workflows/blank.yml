@@ -34,6 +34,9 @@ jobs:
       - name: Set color
         id: color-selector
         run: echo "SELECTED_COLOR=green" >> "$GITHUB_OUTPUT"
+      - env:
+         EVENT_CONTEXT: ${{ toJSON(github.event) }}
+        run: echo $EVENT_CONTEXT
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
