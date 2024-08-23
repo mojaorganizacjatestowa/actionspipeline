@@ -34,6 +34,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          sleep 10
 
   deploy:
     runs-on: ubuntu-latest
@@ -41,6 +42,6 @@ jobs:
     environment: prod
     steps:
       - name: Run a one-line script
-        run: sleep 20
+        run: sleep 15
     
    
