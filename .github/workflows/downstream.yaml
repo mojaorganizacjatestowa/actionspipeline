@@ -5,6 +5,8 @@ on:
     types: [completed]
   workflow_call:
 
+run_name: Triggered by workflow_run_id: ${{ github.event.workflow_run.id }}
+
 jobs:
   # This workflow contains a single job called "build"
   build:
